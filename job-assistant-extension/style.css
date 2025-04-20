@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    padding: 15px;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(135deg, #ff2897, #ff8952, #2c57a7, #3262b5);
+    background-size: 600% 600%;
+    animation: gradientShift 20s ease infinite;
+    color: #f0f0f0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    /* Round the entire box */
+    overflow: hidden;
+    /* Ensure content doesn't overflow rounded corners */
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-align: center;
+}
+
+input[type="file"] {
+    /* width: 100%; */
+    padding: 10px;
+    background: #f0f0f0;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+
+#resumeStatus {
+    font-size: 13px;
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+button {
+    width: 100%;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    background-color: #2b2b3c;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #50506e;
+}
+
+#resumeStatus {
+    font-size: 13px;
+    margin: 8px 0 12px;
+    color: #cccccc;
+    text-align: center;
+}
+
+#resultBox {
+    background: rgba(255, 255, 255, 0.07);
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #e6e6e6;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    white-space: pre-wrap;
+    min-height: 45px;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    background: #2e2e3e;
+    border: 1px solid #444;
+    border-radius: 10px;
+    color: #f0f0f0;
+    resize: vertical;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.primary-btn {
+    background-color: #5865f2;
+}
+
+.primary-btn:hover {
+    background-color: #4752c4;
+}
+
+.secondary-btn {
+    background-color: #3a3a50;
+}
+
+.secondary-btn:hover {
+    background-color: #50506e;
+}
+
+
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
